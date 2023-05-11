@@ -1,8 +1,11 @@
 import { Link} from 'react-router-dom'
 import '../components/login/styles/login.css'
+import useAuthentication from '../hooks/useAuthentication'
 
 
 const Login = ({ userMe }) => {
+
+    const {loginUser} = useAuthentication()
 
     const handleLogin = e => {
         e.preventDefault()
@@ -26,6 +29,7 @@ const Login = ({ userMe }) => {
                         </div>
 
                     </div>
+
                     : <div className='login__content'>
 
                         <p className='login__indication'>Welcome! Enter your email and password to continue</p>
