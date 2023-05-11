@@ -1,4 +1,4 @@
-import { Link} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import '../components/login/styles/login.css'
 import useAuthentication from '../hooks/useAuthentication'
 
@@ -7,12 +7,23 @@ const Login = ({ userMe }) => {
 
     const {loginUser} = useAuthentication()
 
+    const navigate = useNavigate()
+
     const handleLogin = e => {
         e.preventDefault()
+        console.log(e);
         const email = e.target.email.value;
         const password = e.target.password.value;
         const data = { email, password };
         loginUser(data)
+        location.reload()
+        navigate('/')
+    }
+
+    const handleLoginOff = () => {
+        localStorage.removeItem('token')
+        location.reload()   
+        navigate('/')
     }
 
     return (
@@ -27,6 +38,8 @@ const Login = ({ userMe }) => {
                             <p className='login__name'>{userMe.firstName} {userMe.lastName}</p>
                             <p className='Login__email'>{userMe.email}</p>
                         </div>
+
+                        <button onClick={handleLoginOff} className=''>Log Off</button>
 
                     </div>
 

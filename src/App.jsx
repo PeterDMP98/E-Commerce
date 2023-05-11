@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { getAllProductsThunk } from './store/slices/product.slice'
 import { useDispatch } from 'react-redux'
 import Header from './components/shared/Header'

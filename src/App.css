@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    background-color: #fff6f6;
 }
 
 .app__footer{

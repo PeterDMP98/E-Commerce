@@ -1,0 +1,46 @@
+.register{
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 1.5em 1em;
+    border-radius: 1em;
+    background-color: #fff;
+}
+
+.register__title{
+    margin-bottom: 1.5em;
+}
+
+.register__info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.register__info-label{
+    font-size: 1.1rem;
+}
+
+
+.register__info-value{
+    height: 2.4em;
+}
+
+
+.register__btn{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: rgb(255, 105, 105);
+    width: 100%;
+    padding: .7em;
+    margin-top: 2em;
+}
+
+.register__verify-login{
+    margin-top: 1.5em;
+}
+
+.register__verify-login > a{
+    color: rgb(34, 200, 250);
+}
