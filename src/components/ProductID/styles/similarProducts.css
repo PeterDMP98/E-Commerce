@@ -1,0 +1,12 @@
+.similar__product{
+}
+
+.similar__title{
+    margin-bottom: 2em;
+}
+
+.similar__content-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 280px ));
+    gap: 1em;
+}

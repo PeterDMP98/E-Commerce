@@ -1,0 +1,33 @@
+.cart{
+    border: 2px solid #ccc;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.cart__total-product-label{
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.cart__total-product-value{
+    margin-left: 1em;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart__buy-btn{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 50% ;
+    padding: 1em;
+    background-color: rgb(255, 71, 71);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.cart__buy-btn:hover{
+    filter: brightness(1.5);
+}

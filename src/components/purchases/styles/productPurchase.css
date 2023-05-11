@@ -1,0 +1,36 @@
+.prod-purchase{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prod-pruchase__img{
+    width: 100px;
+}
+
+.prod__purchase__info{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.prod-pruchase__title{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.prod-purchases__buy{
+    display: flex;
+    gap: 2em;
+}
+
+.prod-pruchase__quantity{
+    border: 1px solid #ccc;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+}
+
+.prod-pruchase__total{
+    min-width: 100px;
+    text-align: start;
+}

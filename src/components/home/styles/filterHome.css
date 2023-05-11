@@ -1,0 +1,140 @@
+.filter__home{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 10;
+    display: none;
+}
+
+.filter__home-container{
+    height: 100%;
+    padding: 0 1em;
+}
+
+.filter__home-content-close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bxs-x-square{
+    padding: 0.5em 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.filter__title{
+    color: #575757;
+    padding: 0.5em 0; 
+}
+
+.filter__price{
+    margin-bottom:4em ;
+}
+
+.filter__price-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    border-bottom: 1px solid #929292;
+    padding: 0.5em 0;
+    margin-bottom: 0.8em;
+}
+
+.price__title{
+    
+}
+
+.bxs-chevron-down-circle{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+.filter__price-from{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.4em;    
+}
+
+.form__price-from{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#from{
+    border: 1px solid #eeeded;
+    height: 30px;
+}
+
+.form__price-to{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#to{
+    border: 1px solid #eeeded;
+    height: 30px;
+}
+
+.form__price-btn{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.price-btn{
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    color: #fff;
+    background-color: #f35a5a;
+}
+
+.filter__category{
+    margin-top: 2em;
+}
+
+.filter__category-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    border-bottom: 1px solid #929292;
+    padding: 0.5em 0;
+}
+
+
+
+.category__title{
+    
+}
+
+.filter__category__list{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.category__item{
+    color: #575757;
+}
+
+/*funcionalidad*/
+
+.close{
+    display: initial;
+}
+
+.openCloseCategory{
+    display: none;
+}
+
+.openClosePrice{
+    display: none;
+}
