@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import useCrudCart from '../../hooks/useCrudCart'
 import './styles/productIdInfo.css'
+import { useNavigate } from 'react-router-dom'
 
 
-const ProductIdInfo = ({ product }) => {
+const ProductIdInfo = ({product }) => {
 
     const [quantity, setQuantity] = useState(1)
     const { addProductToCard } = useCrudCart()
+    const navigate = useNavigate()
 
 
     const handlePlus = () => {
@@ -21,11 +23,17 @@ const ProductIdInfo = ({ product }) => {
     }
 
     const handleAddToCard = () => {
-        const data = {
-            quantity,
-            productId: product.id
+        if (localStorage.getItem('token')) {
+            const data = {
+                quantity,
+                productId: product.id
+            }
+            addProductToCard(data)
+        } else {
+            navigate('/login')
+            
         }
-        addProductToCard(data)
+
     }
 
     return (

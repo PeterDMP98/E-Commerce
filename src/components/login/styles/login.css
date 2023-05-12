@@ -116,3 +116,21 @@
 .login__to-register {
     color: rgb(0, 140, 255);
 }
+
+
+.login__sing-off{
+    background-color: rgb(255, 121, 121);
+    padding: 0.8em 1.8em;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*funcionalidad*/
+
+.singin{
+    display: none;
+}
+
+.singOff{
+    display: none;    
+}

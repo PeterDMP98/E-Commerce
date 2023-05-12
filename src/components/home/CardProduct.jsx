@@ -17,11 +17,16 @@ const CardProduct = ({ product }) => {
 
     const handleBtnClick = e => {
         e.stopPropagation()
-        const data = {
-            quantity: 1,
-            productId: product.id
+        if (localStorage.getItem('token')) {
+            const data = {
+                quantity: 1,
+                productId: product.id
+            }
+            addProductToCard(data)
+        } else {
+            navigate('/login')
         }
-        addProductToCard(data)
+
     }
 
     

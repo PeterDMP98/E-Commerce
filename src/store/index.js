@@ -5,7 +5,7 @@ import cartGlobal from './slices/cart.slice'
 const store = configureStore({
     reducer: {
         productsGlobal,
-        cartGlobal
+        cartGlobal,
     }
 })
 

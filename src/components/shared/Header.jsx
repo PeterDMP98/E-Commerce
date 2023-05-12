@@ -1,14 +1,25 @@
 import './styles/header.css'
 import { Link } from 'react-router-dom'
 
-const Header = ({userMe}) => {
+const Header = ({ userMe }) => {
+
+
+
+  let singinOff = ""
+
+  if (!localStorage.getItem('token')) {
+    singinOff = "singinOff"
+  } else {
+    singinOff = ""
+  }
+
   return (
     <header className='header'>
       <h1 className='header__logo'><Link to='/'>e-commerce</Link></h1>
-      {
-        userMe ? <p className='header__login-user'>User: {userMe.firstName} {userMe.lastName}</p> : <div></div>
-      }
-      
+
+      <Link to={'/login'} className={`header__login-user ${singinOff}`}>User: {userMe?.firstName} {userMe?.lastName}</Link> <div></div>
+
+
 
       <nav className='header__nav'>
 

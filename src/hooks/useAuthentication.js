@@ -6,13 +6,7 @@ const useAuthentication = () => {
 
     const [userMe, setUserMe] = useState()
 
-    const getLoggedUser = () => {
-        const url = `https://e-commerce-api-v2.academlo.tech/api/v1/users/me`
-        axios.get(url, getConfigToken())
-        .then(res => setUserMe(res.data))
-        .catch(err => console.log(err))
-    }
-
+    /*post - Para crear */
     const createNewUser = data => {
         const url = `https://e-commerce-api-v2.academlo.tech/api/v1/users`
         axios.post(url, data)
@@ -31,6 +25,13 @@ const useAuthentication = () => {
             console.log(err)
             localStorage.removeItem('token')
         })
+    }
+
+    const getLoggedUser = () => {
+        const url = `https://e-commerce-api-v2.academlo.tech/api/v1/users/me`
+        axios.get(url, getConfigToken())
+        .then(res => setUserMe(res.data))
+        .catch(err => console.log(err))
     }
 
 

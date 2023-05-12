@@ -36,7 +36,7 @@ const SlaiderImgs = ({ product }) => {
             <div style={onStyle} className='slider__Interior'>
                 {
                     product?.images.map(imgInfo => (
-                        <div className='slider__img-container'>
+                        <div key={imgInfo.id} className='slider__img-container'>
                             <img className='slider__img' key={imgInfo.id} src={imgInfo.url} alt="" />
                         </div>
                     ))
